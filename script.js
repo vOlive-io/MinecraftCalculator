@@ -5,6 +5,13 @@ var builds = [];
 console.log("Items loaded:", items.length);
 console.log("Recipes keys:", Object.keys(recipes).length);
 
+const itemsById = {};
+const itemsByName = {};
+
+for (const item of items) {
+  itemsById[item.id] = item;
+  itemsByName[item.name] = item;
+}
 
 function addComponet() {
 
