@@ -6,11 +6,11 @@ async function testLoad() {
   console.log("Recipes keys:", Object.keys(recipes).length);
 }
 
-testLoad();
 
 
 
-//var items = [];    
+
+var items = [];    
 var defultItems = [
     ["Dirt", false, null, "dirt.png"], 
     ["Stone", false, null, "stone.png"], 
@@ -21,3 +21,5 @@ var recipes = [];
 function addRecipe() {
 
 }
+
+testLoad();
