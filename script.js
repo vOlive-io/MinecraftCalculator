@@ -10,7 +10,7 @@ testLoad();
 
 
 
-var items = [];    
+//var items = [];    
 var defultItems = [
     ["Dirt", false, null, "dirt.png"], 
     ["Stone", false, null, "stone.png"], 
