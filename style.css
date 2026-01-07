@@ -1,0 +1,27 @@
+body {
+    background-color: #a3d9a5; /* Light green background */
+    font-family: 'Minecraft', sans-serif; /* Use a Minecraft-like font */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #8B4513; /* Brown color for the button */
+    color: #FFFFFF; /* White text */
+    border: 2px solid #5C3A29; /* Darker brown border */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #A0522D; /* Lighter brown on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.button:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+}
