@@ -1,5 +1,5 @@
-var items = await fetch("./data/pc/1.21.1/items.json").then(r => r.json());
-var recipes = await fetch("./data/pc/1.21.1/recipes.json").then(r => r.json());
+var items = fetch("./data/pc/1.21.1/items.json").then(r => r.json());
+var recipes = fetch("./data/pc/1.21.1/recipes.json").then(r => r.json());
 var conponents = [];
 var builds = [];
 console.log("Items loaded:", items.length);
@@ -19,3 +19,11 @@ function addComponet() {
 function addBuild() {
 
 } 
+
+
+
+const observerId = itemsByName["observer"].id;
+
+const obsList = recipes[String(observerId)];
+console.log("observer recipes count:", obsList?.length);
+console.log("observer first recipe raw:", obsList?.[0]);
